@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -31,7 +32,7 @@ h1{color: white; font-size: 4rem; font-family:  'Montserrat', sans-serif;}
 p,h2{
     font-size: 2.3rem;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
     word-spacing: 2rem;
@@ -52,4 +53,17 @@ p,h2{
 
 p,h2{font-size: 1.5rem; word-spacing: 0.5rem;}
 
+}
+#btn{
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+    background-color: rgb(105, 97, 97);
+    color: rgb(236, 71, 21);
+    border-radius: 30px;
+    border: none;
+    transform: border 0.5s;
+}
+#btn:hover{
+    border: 1px solid white;
 }
