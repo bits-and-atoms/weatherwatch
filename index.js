@@ -17,33 +17,75 @@ const showWeather = (data) => {
         weather.innerHTML = `<h2> City Not Found <h2>`
         return;
     }
-    if(data.weather[0].main == "Rain")
-    document.body.style.background = " url('rainy.jpg')";
-    if(data.weather[0].main == "Drizzle")
-    document.body.style.background = " url('rainy.jpg')";
-    if(data.weather[0].main == "Clouds"){
-    document.body.style.background = " url('Cloudy.jpg')";
+    // if(data.weather[0].main == "Rain")
+    // document.body.style.background = " url('rainy.jpg')";
+    // if(data.weather[0].main == "Drizzle")
+    // document.body.style.background = " url('rainy.jpg')";
+    if(data.weather[0].main == "Rain"){
+        document.body.style.background = " url('rainy.jpg')";
+        inputbox.style.cssText = "background-color: #8CBEBF";
     }
-    if(data.weather[0].main == "Smoke")
-    document.body.style.background = " url('hazenew.jpg')";
-    if(data.weather[0].main == "Haze")
-    document.body.style.background = " url('hazenew.jpg')";
-    if(data.weather[0].main == "Mist")
-    document.body.style.background = " url('hazenew.jpg')";
-    if(data.weather[0].main == "Fog")
-    document.body.style.background = " url('hazenew.jpg')";
-    if(data.weather[0].main == "Clear")
-    document.body.style.background = " url('clearsky.jpg')";
-    if(data.weather[0].main == "Thunderstorm")
-    document.body.style.background = " url('thunder.jpg')";
-    if(data.weather[0].main == "Dust")
-    document.body.style.background = " url('sandy.jpg')";
-    if(data.weather[0].main == "Sand")
-    document.body.style.background = " url('sandy.jpg')";
-    if(data.weather[0].main == "Snow")
-    document.body.style.background = " url('snowy.jpg')";
-
-    
+    if(data.weather[0].main == "Drizzle"){
+        document.body.style.background = " url('rainy.jpg')";
+        inputbox.style.cssText = "background-color: #8CBEBF";
+    }
+    // if(data.weather[0].main == "Clouds"){
+    // document.body.style.background = " url('Cloudy.jpg')";
+    // }
+    // if(data.weather[0].main == "Smoke")
+    // document.body.style.background = " url('hazenew.jpg')";
+    // if(data.weather[0].main == "Haze")
+    // document.body.style.background = " url('hazenew.jpg')";
+    // if(data.weather[0].main == "Mist")
+    // document.body.style.background = " url('hazenew.jpg')";
+    // if(data.weather[0].main == "Fog")
+    // document.body.style.background = " url('hazenew.jpg')";
+    // if(data.weather[0].main == "Clear")
+    // document.body.style.background = " url('clearsky.jpg')";
+    // if(data.weather[0].main == "Thunderstorm")
+    // document.body.style.background = " url('thunder.jpg')";
+    // if(data.weather[0].main == "Dust")
+    // document.body.style.background = " url('sandy.jpg')";
+    // if(data.weather[0].main == "Sand")
+    // document.body.style.background = " url('sandy.jpg')";
+    // if(data.weather[0].main == "Snow")
+    // document.body.style.background = " url('snowy.jpg')";
+    if(data.weather[0].main == "Snow"){
+        document.body.style.background = " url('snowy.jpg')";
+        inputbox.style.cssText = "background-color: #E8F6FF";
+    }
+    if(data.weather[0].main == "Thunderstorm"){
+        document.body.style.background = " url('thunder.jpg')";
+        inputbox.style.cssText = "background-color: #4D6774";
+    }
+    if(data.weather[0].main == "Sand"){
+        document.body.style.background = " url('sandy.jpg')";
+        inputbox.style.cssText = "background-color: #FFAB4B";
+    }
+    if(data.weather[0].main == "Dust"){
+        document.body.style.background = " url('sandy.jpg')";
+        inputbox.style.cssText = "background-color: #FFAB4B";
+    }
+    if(data.weather[0].main == "Smoke"){
+        document.body.style.background = " url('hazenew.jpg')";
+        inputbox.style.cssText = "background-color: #F1DEB6";
+    }
+    if(data.weather[0].main == "Haze"){
+        document.body.style.background = " url('hazenew.jpg')";
+        inputbox.style.cssText = "background-color: #F1DEB6";
+    }
+    if(data.weather[0].main == "Mist"){
+        document.body.style.background = " url('hazenew.jpg')";
+        inputbox.style.cssText = "background-color: #F1DEB6";
+    }
+    if(data.weather[0].main == "Clear"){
+        document.body.style.background = " url('clearsky.jpg')";
+        inputbox.style.cssText = "background-color: #7DA7CF";
+    }
+    if(data.weather[0].main == "Fog"){
+        document.body.style.background = " url('hazenew.jpg')";
+        inputbox.style.cssText = "background-color: #F1DEB6";
+    }
     weather.innerHTML = `
     <p>${data.main.temp}℃<br>${data.weather[0].main}<br>${data.main.temp_min}℃(min)  ${data.main.temp_max}℃(max)</p>
     `
