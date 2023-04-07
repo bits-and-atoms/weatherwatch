@@ -45,7 +45,7 @@ const showWeather = (data) => {
 
     
     weather.innerHTML = `
-    <p>${data.main.temp}℃<br>${data.weather[0].main}<br>${data.main.temp_min}℃(min)  ${data.main.temp_max}℃(max)</p>
+    <p>${data.main.temp}℃<br>${data.weather[0].main}<br>${data.main.temp_min}℃(min)  ${data.main.temp_max}℃(max)<br>Pressure : ${data.main.pressure}mb<br>Humidity : ${data.main.humidity}%<br>Wind speed : ${data.wind.speed}km/h</p>
     `
 }
 
